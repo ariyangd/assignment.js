@@ -1,25 +1,26 @@
 
+//https://github.com/ariyangd/assignment.js
 
-// //Question 1 - Kilo Meter to Meter 
-// function kilometerToMeter(km){
-//     var meter = km * 1000;
-//     return meter;
-// }
-// var convert = kilometerToMeter(10);
-// console.log('Kilo Meter to Meter is: ', convert);
+//Question 1 - Kilo Meter to Meter 
+function kilometerToMeter(km){
+    var meter = km * 1000;
+    return meter;
+}
+var convert = kilometerToMeter(10);
+console.log('Kilo Meter to Meter is: ', convert);
 
 
-// //Question 2 - Budget Calculator 
-// function budgetCalculator(watch,phone,laptop){
-//    var watch = watch * 50;
-//    var phone = phone * 100;
-//    var laptop = laptop * 500;
+//Question 2 - Budget Calculator 
+function budgetCalculator(watch,phone,laptop){
+   var watch = watch * 50;
+   var phone = phone * 100;
+   var laptop = laptop * 500;
    
-//    return watch, phone, laptop; 
-// }
+   return watch, phone, laptop; 
+}
 
-// var totalBudget = budgetCalculator(10,10,10);
-// console.log('Total Bedget Need is: ', totalBudget);
+var totalBudget = budgetCalculator(10,10,10);
+console.log('Total Bedget Need is: ', totalBudget);
 
 
 
@@ -30,15 +31,12 @@ function hotelCost(days){
     if(days <= 10){
         var charge = days * 100;
         cost = charge;
-        
-
     }
     else if (days >=10 && days <=20 ){
         var charge1 = 10*100;
         var daysRemaining = days - 10;
         var charge2 = daysRemaining*80;
         cost = charge1 + charge2;
-
     }
     else{
       charge1 = 10*100;
@@ -58,22 +56,22 @@ console.log(totalCost);
 
 
 
-// //Question 4 - Mega Friend
-// function findLongestWord(name) {
-// var name= ['Ariyan', 'Rakib', 'Mumit', 'Saju', 'Hasan'];
-//     var lgth = 0;
-//     var longest;
+//Question 4 - Mega Friend
+function findLongestWord(name) {
+var name= ['Ariyan', 'Rakib', 'Mumit', 'Saju', 'Hasan'];
+    var lgth = 0;
+    var longest;
 
-//     for (var i = 0; i < name.length; i++) {
-//         if (name[i].length > lgth) {
-//             var lgth = name[i].length;
-//             longest = name[i];
-//             var large = longest;
+    for (var i = 0; i < name.length; i++) {
+        if (name[i].length > lgth) {
+            var lgth = name[i].length;
+            longest = name[i];
+            var large = longest;
             
-//         }
-//       return large;
-//     }
-//   }
-//   var friendName = findLongestWord();
-//   console.log(friendName);
+        }
+      return large;
+    }
+  }
+  var friendName = findLongestWord();
+  console.log(friendName);
   
