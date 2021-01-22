@@ -1,9 +1,10 @@
 
 //https://github.com/ariyangd/assignment.js
 
-//Question 1 - Kilo Meter to Meter 
+
+//Question 1 - KiloMeter to Meter 
 function kilometerToMeter(km){
-    var meter = km * 1000;
+    var meter = km * 1000;                          
     return meter;
 }
 var convert = kilometerToMeter(10);
@@ -13,13 +14,13 @@ console.log('Kilo Meter to Meter is: ', convert);
 //Question 2 - Budget Calculator 
 function budgetCalculator(watch,phone,laptop){
    var watch = watch * 50;
-   var phone = phone * 100;
+   var phone = phone * 100;                         
    var laptop = laptop * 500;
    
    return watch, phone, laptop; 
 }
 
-var totalBudget = budgetCalculator(10,10,10);
+var totalBudget = budgetCalculator(10,20,30);
 console.log('Total Bedget Need is: ', totalBudget);
 
 
@@ -48,11 +49,7 @@ function hotelCost(days){
     return cost;
 }
 var totalCost = hotelCost(21);
-console.log(totalCost);
-
-
-
-
+console.log('Total Staying Cost is: ', totalCost);
 
 
 
@@ -67,11 +64,11 @@ var name= ['Ariyan', 'Rakib', 'Mumit', 'Saju', 'Hasan'];
             var lgth = name[i].length;
             longest = name[i];
             var large = longest;
-            
+            large = large.toString(); //tried something new 
         }
       return large;
     }
   }
   var friendName = findLongestWord();
-  console.log(friendName);
+  console.log('Longest Word is: ', friendName);
   
