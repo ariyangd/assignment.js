@@ -22,14 +22,15 @@ function budgetCalculator(watch,phone,laptop){
 var totalBudget = budgetCalculator(10,10,10);
 console.log('Total Bedget Need is: ', totalBudget);
 
-
+*/
 
 //Question 3 - Hotel Cost
 function hotelCost(days){
     var days;
-
+    var totalDays = days* days;
+    
     if(days <= 10){
-        console.log('Hotel Cost is: 100' );
+        console.log('Hotel Cost is: 100', );
     }
     else if (days >= 10 && days <=20){
         console.log('Hotel Cost is: 80');
@@ -40,27 +41,26 @@ function hotelCost(days){
     return days;
 }
 var totalDays = hotelCost(20);
-console.log(totalDays*);
-
-*/
-
-//Question 4 - Mega Friend
+console.log(totalDays);
 
 
 
-function megaFriend(friendsName) {
-    
-    var friendsName = ['Ariyan', 'Rakib', 'Mumit', 'Saju', 'Akbar'];
-    var long = 0;
-    var longest;
+// //Question 4 - Mega Friend
 
-    for (var i = 0; i < friendsName.length; i++) {
-        if (friendsName[i].length > long) {
-            var long = friendsName[i].length;
-            longest = friendsName[i];
-        }
-        return longest;
-    }
-}
 
-console.log(longest);
+// function arry(large) {
+//     var arr = ['Ariyan', 'Rakib', 'Mumit', 'Saju', 'Hasan'];
+
+//     var lgth = 0;
+//     var longest;
+
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i].length > lgth) {
+//             var lgth = arr[i].length;
+//             longest = arr[i];
+//             var large = longest;
+//         }
+//         return large;
+//     }
+// }
+// console.log(large);
