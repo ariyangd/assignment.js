@@ -1,66 +1,79 @@
-/**
- 
- 
- 
-//Question 1 - Kilo Meter to Meter 
-function kilometerToMeter(km){
-    var meter = km * 1000;
-    return meter;
-}
-var convert = kilometerToMeter(10);
-console.log('Kilo Meter to Meter is: ', convert);
 
-//Question 2 - Budget Calculator 
-function budgetCalculator(watch,phone,laptop){
-   var watch = watch * 50;
-   var phone = phone * 100;
-   var laptop = laptop * 500;
+
+// //Question 1 - Kilo Meter to Meter 
+// function kilometerToMeter(km){
+//     var meter = km * 1000;
+//     return meter;
+// }
+// var convert = kilometerToMeter(10);
+// console.log('Kilo Meter to Meter is: ', convert);
+
+
+// //Question 2 - Budget Calculator 
+// function budgetCalculator(watch,phone,laptop){
+//    var watch = watch * 50;
+//    var phone = phone * 100;
+//    var laptop = laptop * 500;
    
-   return watch, phone, laptop; 
-}
+//    return watch, phone, laptop; 
+// }
 
-var totalBudget = budgetCalculator(10,10,10);
-console.log('Total Bedget Need is: ', totalBudget);
+// var totalBudget = budgetCalculator(10,10,10);
+// console.log('Total Bedget Need is: ', totalBudget);
 
-*/
+
 
 //Question 3 - Hotel Cost
 function hotelCost(days){
-    var days;
-    var totalDays = days* days;
+  var cost = 0;
     
     if(days <= 10){
-        console.log('Hotel Cost is: 100', );
+        var charge = days * 100;
+        cost = charge;
+        
+
     }
-    else if (days >= 10 && days <=20){
-        console.log('Hotel Cost is: 80');
+    else if (days >=10 && days <=20 ){
+        var charge1 = 10*100;
+        var daysRemaining = days - 10;
+        var charge2 = daysRemaining*80;
+        cost = charge1 + charge2;
+
     }
     else{
-        console.log('Hotel Cost is: 50');
+      charge1 = 10*100;
+      charge2 = 10* 80;
+      daysRemaining = days - 20;
+      charge3 = daysRemaining*50;
+      cost = charge1 + charge2 + charge3;
     }
-    return days;
+    return cost;
 }
-var totalDays = hotelCost(20);
-console.log(totalDays);
+var totalCost = hotelCost(21);
+console.log(totalCost);
+
+
+
+
 
 
 
 // //Question 4 - Mega Friend
-
-
-// function arry(large) {
-//     var arr = ['Ariyan', 'Rakib', 'Mumit', 'Saju', 'Hasan'];
-
+// function findLongestWord(name) {
+// var name= ['Ariyan', 'Rakib', 'Mumit', 'Saju', 'Hasan'];
 //     var lgth = 0;
 //     var longest;
 
-//     for (var i = 0; i < arr.length; i++) {
-//         if (arr[i].length > lgth) {
-//             var lgth = arr[i].length;
-//             longest = arr[i];
+//     for (var i = 0; i < name.length; i++) {
+//         if (name[i].length > lgth) {
+//             var lgth = name[i].length;
+//             longest = name[i];
 //             var large = longest;
+            
 //         }
-//         return large;
+//       return large;
 //     }
-// }
-// console.log(large);
+//   }
+//   var friendName = findLongestWord();
+//   console.log(friendName);
+  
